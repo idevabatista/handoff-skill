@@ -133,36 +133,36 @@ No synonyms, no paraphrasing, no shortening. If a frame is named `"Card_Evento�
 ### Document Header
 
 ```markdown
-# Handoff: [Nome da Tela]
+# Handoff: [Screen Name]
 
-**Link da Tela Inteira:** [URL direto do frame no Figma]
-**Última atualização:** [data]
-**Responsável:** [nome do designer]
+**Full Screen Link:** [Direct Figma frame URL]
+**Last Update:** [date]
+**Owner:** [designer name]
 ```
 
 ### Section Block (repeat per Figma section)
 
 ```markdown
-## [Nome da Seção conforme o Figma]
+## [Section Name as in Figma]
 
-**Objetivo:** [Uma frase curta descrevendo a função desta seção.]
+**Objective:** [Short sentence describing the function of this section.]
 
-**Link de Referência da Seção:** [URL direto para esta seção no Figma]
+**Section Reference Link:** [Direct Figma section URL]
 
-### Regras de Negócio
-- [Regra 1: condicional, lógica de exibição, restrição]
-- [Regra 2]
+### Business Rules
+- [Rule 1: conditional, display logic, constraint]
+- [Rule 2]
 
-### Tabela de Interações e Estados
+### Interaction & States Table
 
-| Componente | Gatilho | Mudança de Estado | Link do Estado |
+| Component | Trigger | State Change | State Link |
 |:---|:---|:---|:---|
-| [Nome exato] | [Clique / Hover / Focus / Submit] | [Estado resultante] | [Link Figma] |
+| [Exact Name] | [Click / Hover / Focus / Submit] | [Resulting State] | [Figma Link] |
 
-### Estados de Fluxo (Modais e Feedbacks)
-- **Loading:** [quando é ativado, o que exibe, duração mínima se houver]
-- **Error:** [condição de erro, mensagem exibida, ação possível]
-- **Success:** [condição de sucesso, feedback visual, próximo passo]
+### Flow States (Modals & Feedback)
+- **Loading:** [when activated, what it shows, min duration if any]
+- **Error:** [error condition, message displayed, possible action]
+- **Success:** [success condition, visual feedback, next step]
 ```
 
 ### State Table Convention
@@ -171,16 +171,16 @@ All state tables follow this column schema, no exceptions:
 
 | Column | Content |
 |---|---|
-| `Componente` | Exact Figma component name |
-| `Gatilho` | Event type: Clique, Hover, Focus, Blur, Submit, Scroll |
-| `Mudança de Estado` | Resulting state using Figma variant naming |
-| `Link do Estado` | Direct Figma frame/variant URL |
+| `Component` | Exact Figma component name |
+| `Trigger` | Event type: Click, Hover, Focus, Blur, Submit, Scroll |
+| `State Change` | Resulting state using Figma variant naming |
+| `State Link` | Direct Figma frame/variant URL |
 
 ### Trigger Types Reference
 
 | Trigger | Use Case |
 |---|---|
-| `Clique` | Buttons, links, cards, toggles |
+| `Click` | Buttons, links, cards, toggles |
 | `Hover` | Tooltips, card previews, link underlines |
 | `Focus` | Form inputs, search, textarea |
 | `Blur` | Field validation on exit |
@@ -208,14 +208,14 @@ Document every condition using this pattern:
 Every screen must declare its authentication behavior explicitly:
 
 ```markdown
-### Fluxo de Autenticação
+### Authentication Flow
 
-| Condição | Comportamento |
+| Condition | Behavior |
 |:---|:---|
-| Usuário autenticado | [O que renderiza / qual rota acessa] |
-| Usuário anônimo | [Redirect / gate / modal de login] |
-| Token expirado | [Sessão expirada: logout automático / refresh] |
-| Permissão insuficiente | [Conteúdo bloqueado / mensagem de erro] |
+| Authenticated user | [What renders / what route it accesses] |
+| Anonymous user | [Redirect / gate / login modal] |
+| Expired token | [Session expired: auto-logout / refresh] |
+| Insufficient permission | [Blocked content / error message] |
 ```
 
 ### Async State Machine (Loading → Success → Error)
@@ -223,12 +223,12 @@ Every screen must declare its authentication behavior explicitly:
 Every component with async data must document its three states:
 
 ```markdown
-### Estados Assíncronos: [Nome do Componente]
+### Async States: [Component Name]
 
-- **Loading:** Skeleton / spinner ativo enquanto aguarda resposta da API
-- **Success:** [Dados renderizados, ação disponível ao usuário]
-- **Error:** [Mensagem de erro exibida, ação de retry disponível: sim/não]
-- **Empty:** [Estado quando o retorno da API é vazio — ex: lista sem itens]
+- **Loading:** Skeleton / active spinner while waiting for API response
+- **Success:** [Rendered data, action available to user]
+- **Error:** [Error message displayed, retry action available: yes/no]
+- **Empty:** [State when API return is empty — e.g., list with no items]
 ```
 
 ### Form Validation Rules
@@ -236,9 +236,9 @@ Every component with async data must document its three states:
 For each form field, document:
 
 ```markdown
-| Campo | Tipo | Obrigatório | Validação | Mensagem de Erro |
+| Field | Type | Required | Validation | Error Message |
 |:---|:---|:---|:---|:---|
-| [name] | text / email / password | sim/não | [regex / min-max / custom] | [texto exibido] |
+| [name] | text / email / password | yes/no | [regex / min-max / custom] | [displayed text] |
 ```
 
 ---
@@ -251,7 +251,7 @@ When generating Figma reference links, follow this convention:
 - **Component/section link:** append `&node-id=[componentId]` to scope the view
 - **Variant link:** navigate to the specific variant frame and copy the `node-id` from the URL
 
-> If the Figma file has not been shared yet, use placeholder syntax: `[Link: NomeDoFrame]` and flag for designer to fill before developer review.
+> If the Figma file has not been shared yet, use placeholder syntax: `[Link: FrameName]` and flag for designer to fill before developer review.
 
 ---
 
@@ -291,66 +291,66 @@ Before finalizing any handoff document, validate:
 ## 10. Example Output Snippet
 
 ```markdown
-# Handoff: Tela de Login
+# Handoff: Login Screen
 
-**Link da Tela Inteira:** https://www.figma.com/file/ABC123?node-id=10-200
+**Full Screen Link:** https://www.figma.com/file/ABC123?node-id=10-200
 
 ---
 
 ## Header_Login
 
-**Objetivo:** Exibir logo e navegação mínima para contexto de autenticação.
-**Link de Referência da Seção:** https://www.figma.com/file/ABC123?node-id=10-201
+**Objective:** Display logo and minimal navigation for authentication context.
+**Section Reference Link:** https://www.figma.com/file/ABC123?node-id=10-201
 
-### Regras de Negócio
-- Exibe apenas o logo; a navegação principal é suprimida neste contexto.
-- O link "Voltar" só é exibido se o usuário chegou via redirect autenticado.
+### Business Rules
+- Displays logo only; main navigation is suppressed in this context.
+- "Back" link is only displayed if the user arrived via authenticated redirect.
 
-### Tabela de Interações e Estados
+### Interaction & States Table
 
-| Componente | Gatilho | Mudança de Estado | Link do Estado |
+| Component | Trigger | State Change | State Link |
 |:---|:---|:---|:---|
-| Logo | Clique | Redireciona para `/home` | [Link] |
-| Link_Voltar | Clique | Navega para a rota anterior no histórico | [Link] |
-| Link_Voltar | Mount | Visível apenas se `redirect_origin` existe na sessão | [Link] |
+| Logo | Click | Redirects to `/home` | [Link] |
+| Back_Link | Click | Navigates to previous route in history | [Link] |
+| Back_Link | Mount | Visible only if `redirect_origin` exists in session | [Link] |
 
 ---
 
 ## Form_Login
 
-**Objetivo:** Capturar credenciais e autenticar o usuário.
-**Link de Referência da Seção:** https://www.figma.com/file/ABC123?node-id=10-210
+**Objective:** Capture credentials and authenticate user.
+**Section Reference Link:** https://www.figma.com/file/ABC123?node-id=10-210
 
-### Regras de Negócio
-- Submit só é habilitado quando ambos os campos passam na validação inline.
-- Após 3 tentativas falhas, exibe componente `Alerta_Bloqueio` e desabilita o botão por 30s.
+### Business Rules
+- Submit is only enabled when both fields pass inline validation.
+- After 3 failed attempts, displays `Lockout_Alert` component and disables button for 30s.
 
-### Tabela de Interações e Estados
+### Interaction & States Table
 
-| Componente | Gatilho | Mudança de Estado | Link do Estado |
+| Component | Trigger | State Change | State Link |
 |:---|:---|:---|:---|
 | Input_Email | Focus | Default → Active | [Link] |
-| Input_Email | Blur (inválido) | Active → Error | [Link] |
-| Input_Senha | Focus | Default → Active | [Link] |
-| Botao_Entrar | Submit (loading) | Default → Loading | [Link] |
-| Botao_Entrar | Submit (erro) | Loading → Error | [Link] |
-| Botao_Entrar | Submit (sucesso) | Loading → Success → redirect | [Link] |
+| Input_Email | Blur (invalid) | Active → Error | [Link] |
+| Input_Password | Focus | Default → Active | [Link] |
+| Submit_Button | Submit (loading) | Default → Loading | [Link] |
+| Submit_Button | Submit (error) | Loading → Error | [Link] |
+| Submit_Button | Submit (success) | Loading → Success → redirect | [Link] |
 
-### Validação de Campos
+### Field Validation
 
-| Campo | Tipo | Obrigatório | Validação | Mensagem de Erro |
+| Field | Type | Required | Validation | Error Message |
 |:---|:---|:---|:---|:---|
-| Input_Email | email | sim | RFC 5322 + domínio válido | "Insira um e-mail válido" |
-| Input_Senha | password | sim | mínimo 8 caracteres | "A senha deve ter ao menos 8 caracteres" |
+| Input_Email | email | yes | RFC 5322 + valid domain | "Enter a valid email" |
+| Input_Password | password | yes | min 8 characters | "Password must be at least 8 characters" |
 
-### Estados Assíncronos: Botao_Entrar
+### Async States: Submit_Button
 
-- **Loading:** Spinner ativo, botão desabilitado, sem feedback de resultado
-- **Success:** Redirect para `/dashboard` (sem mensagem na tela)
-- **Error:** Exibe `Alerta_Erro_Credenciais` abaixo do formulário; campos mantêm conteúdo
-- **Bloqueio:** Exibe `Alerta_Bloqueio` com countdown; botão `disabled` durante 30s
+- **Loading:** Active spinner, disabled button, no result feedback
+- **Success:** Redirect to `/dashboard` (no on-screen message)
+- **Error:** Displays `Credentials_Error_Alert` below the form; fields keep content
+- **Lockout:** Displays `Lockout_Alert` with countdown; button `disabled` for 30s
 ```
 
 ---
 
-*Este documento é um perfil de habilidade (Skill Definition) para uso em modelos de IA. Ele deve ser salvo como `SKILL.md` e referenciado no contexto do modelo para replicar o comportamento descrito.*
+*This document is a Skill Definition for use in AI models. It should be saved as `SKILL.md` and referenced in the model context to replicate the described behavior.*

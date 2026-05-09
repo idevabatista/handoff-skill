@@ -1,1 +1,1 @@
-# Handoff Templates\n\nEste arquivo contém exemplos de como a skill gera a documentação.\n\n*Veja o exemplo no SKILL.md seção 10 para um snippet real.*
+# Handoff Templates\n\nThis file contains examples of how the skill generates documentation.\n\n*See the example in SKILL.md section 10 for a real snippet.*

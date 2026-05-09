@@ -3,54 +3,54 @@
 [![AI Skill](https://img.shields.io/badge/AI-Skill-blueviolet?style=for-the-badge)](https://github.com/idevabatista/handoff-skill)
 [![Status](https://img.shields.io/badge/Status-Production-success?style=for-the-badge)](https://github.com/idevabatista/handoff-skill)
 
-Esta é uma **Skill Definition** de alto nível projetada para transformar modelos de IA (como Antigravity, Claude, ChatGPT) em um **Senior Product Designer especialista em Handoff Técnico**.
+This is a high-level **Skill Definition** designed to transform AI models (such as Antigravity, Claude, ChatGPT) into a **Senior Product Designer specializing in Technical Handoff**.
 
-O foco principal desta skill é eliminar o gap entre o design e a engenharia, traduzindo componentes visuais do Figma em documentação técnica precisa, lógica de estados e regras de negócio.
+The primary focus of this skill is to bridge the gap between design and engineering by translating visual components from Figma into precise technical documentation, state logic, and business rules.
 
 ---
 
-## 🚀 Como utilizar esta Skill
+## 🚀 How to use this Skill
 
-Para utilizar esta habilidade em sua ferramenta de IA preferida, você pode referenciar o arquivo `SKILL.md` deste repositório.
+To use this skill in your preferred AI tool, you can reference the `SKILL.md` file in this repository.
 
-### No Antigravity / OpenCode
-Basta carregar o arquivo ou colar o conteúdo no contexto do seu agente:
+### In Antigravity / OpenCode
+Simply load the file or paste the content into your agent's context:
 ```markdown
-Referencie este arquivo como uma Skill de Senior Product Designer para documentar o handoff técnico.
+Reference this file as a Senior Product Designer Skill to document technical handoff.
 ```
 
-### No Claude.ai (Projects) ou Custom GPTs
-1. Faça o download do arquivo `SKILL.md`.
-2. Adicione-o à base de conhecimento do seu Projeto (Claude) ou como um arquivo de referência no seu Custom GPT.
-3. A IA passará a agir seguindo estritamente os protocolos de documentação técnica definidos.
+### In Claude.ai (Projects) or Custom GPTs
+1. Download the `SKILL.md` file.
+2. Add it to your Project's knowledge base (Claude) or as a reference file in your Custom GPT.
+3. The AI will then act strictly following the defined technical documentation protocols.
 
 ---
 
-## 🎯 Foco e Metodologia
+## 🎯 Focus and Methodology
 
-Diferente de skills de design genéricas, esta foca em **"Como funciona"** e não em "Como parece".
+Unlike generic design skills, this one focuses on **"How it works"** rather than "How it looks".
 
-### Pilares da Skill:
-- **Parse de Figma MPC**: Interpretação nativa de Slots e Variáveis do Figma.
-- **Mapeamento de Estados**: Documentação rigorosa de estados `Default`, `Hover`, `Active`, `Disabled`, `Loading`, `Error` e `Success`.
-- **Regras de Negócio**: Identificação de condicionais de renderização e fluxos de autenticação.
-- **Nomenclatura Verbatim**: Garantia de que todos os nomes de camadas e componentes correspondam 1:1 ao arquivo de design.
-
----
-
-## 📁 Estrutura do Repositório
-
-- `SKILL.md`: O núcleo da inteligência. Contém os protocolos e a identidade do agente.
-- `HANDOFF.md`: Template e exemplos de documentos de handoff gerados.
-- `RESOURCES.md`: Links e referências úteis para o framework MPC e boas práticas de handoff.
+### Skill Pillars:
+- **Figma MPC Parsing**: Native interpretation of Figma Slots and Variables.
+- **State Mapping**: Rigorous documentation of `Default`, `Hover`, `Active`, `Disabled`, `Loading`, `Error`, and `Success` states.
+- **Business Rules**: Identification of rendering conditionals and authentication flows.
+- **Verbatim Nomenclature**: Ensures all layer and component names match the design file 1:1.
 
 ---
 
-## 🤝 Contribuições
+## 📁 Repository Structure
 
-Sinta-se à vontade para abrir Issues ou Pull Requests para melhorar os protocolos de documentação ou adicionar suporte a novos frameworks de design.
+- `SKILL.md`: The core intelligence. Contains the protocols and agent identity.
+- `HANDOFF.md`: Template and examples of generated handoff documents.
+- `RESOURCES.md`: Useful links and references for the MPC framework and handoff best practices.
 
 ---
 
-### Criado por [idevabatista](https://github.com/idevabatista)
-*Refinando a ponte entre design e código através de IA.*
+## 🤝 Contributions
+
+Feel free to open Issues or Pull Requests to improve documentation protocols or add support for new design frameworks.
+
+---
+
+### Created by [idevabatista](https://github.com/idevabatista)
+*Refining the bridge between design and code through AI.*
