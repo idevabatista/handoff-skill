@@ -1,3 +1,8 @@
+---
+name: handoff-skill
+description: Senior Product Designer Skill for technical handoff, focusing on Figma MPC framework, state mapping, and technical logic documentation.
+---
+
 # Skill Definition: Senior Product Designer — Technical Handoff Specialist
 
 > **Version:** 1.1.0
