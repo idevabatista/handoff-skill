@@ -26,6 +26,23 @@ Reference this file as a Senior Product Designer Skill to document technical han
 
 ---
 
+## 💡 Usage Example
+
+To get the best results, use the following prompt structure when starting a new documentation task:
+
+```markdown
+I'm starting a new handoff. Here is the data:
+
+- **File:** [Figma file name]
+- **General Link:** [Figma link]
+- **Location:** [Folder name]
+- **Framework:** Figma MPC (Respect slots and variables logic) as per project instructions.
+
+Before generating the documentation file, please present a summary of what you understood about the business logic and states. If it's correct, I will authorize the file creation.
+```
+
+---
+
 ## 🎯 Focus and Methodology
 
 Unlike generic design skills, this one focuses on **"How it works"** rather than "How it looks".
